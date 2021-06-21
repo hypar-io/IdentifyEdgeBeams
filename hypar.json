@@ -1,0 +1,38 @@
+{
+  "$schema": "https://hypar.io/Schemas/Function.json",
+  "id": "e68cd685-a0ed-4417-9344-2ceddb9d2cba",
+  "name": "Identify Edge Beams",
+  "description": "Identifies edge beams and columns in a structure.",
+  "language": "C#",
+  "model_dependencies": [
+    {
+      "autohide": false,
+      "name": "Structure",
+      "optional": false
+    },
+    {
+      "autohide": false,
+      "name": "Bays",
+      "optional": false
+    }
+  ],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "Selection Type": {
+        "type": "string",
+        "enum": [
+          "Columns",
+          "Edge Beams"
+        ],
+        "default": "Edge Beams"
+      }
+    }
+  },
+  "outputs": [],
+  "repository_url": "https://github.com/hypar-io/function",
+  "source_file_key": null,
+  "preview_image": null,
+  "thumbnail_id": null,
+  "last_updated": "0001-01-01T00:00:00"
+}
